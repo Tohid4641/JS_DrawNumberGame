@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="dice_icon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drwa Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startscreen" onclick="Hide1()" class="StartScreen">
+        <h1>Draw And Win</h1>
+        <p id="Para1">Draw Given Number First & Win The Game</p>
+        <p style="text-align: center;">Play<br>Or<br>Click Here to Start</p>
+    </div>
+    <div id="game" class="hide">
+        <div class="content">
+            <h1>If your Draw first you will Winner</h1>
+            <p></p><br>
+            <p id="chances">Chances Left : <b>5</b></p>
+        </div>
+        <div id="images">
+            <div>
+                <h2 id="play1">Player 1</h2>
+                <img class="images_img" src="dice_imgs/dice1.png">
+                <p></p>
+            </div>
+            <button onclick="DiceGen()" id="btn">Throw</button>
+            <div>
+                <h2 id="play2">Player 2</h2>
+                <img class="images_img" src="dice_imgs/dice2.png">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div id="gameOverScreen" class="game_over_screen hide">
+        <h1>Game Over</h1>
+        <p id="g_over_text">Chances Over</p>
+        <!-- <button id="btn1" class="btn">Try Again!</button> -->
+        <button id="btn2" class="btn" onclick="refreshPage()">Exit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
